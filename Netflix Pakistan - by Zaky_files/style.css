@@ -203,6 +203,7 @@ nav button {
     margin: 0;
     width: 100%; /* Ensure it uses all available width */
     background: black;
+    flex-wrap: wrap; /* allow cards to wrap on small screens */
 }
 
 .card {
@@ -364,12 +365,27 @@ nav button {
         max-width: 300px;
     }
 
-    .main2content>span {
-        width: 120px;
+    .main2content {
+        gap: 20px;
+    }
+
+    .card {
+        width: 45%;
+        max-width: 140px;
     }
 
     .ranking-number {
         font-size: 4em;
+    }
+
+    .trend {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .faqbox,
+    .faq-answer {
+        max-width: 90vw;
     }
 }
 
@@ -400,8 +416,9 @@ nav button {
         font-size: 12px;
     }
 
-    .main2content>span {
-        width: 100px;
+    .card {
+        width: 80%;
+        max-width: 120px;
     }
 
     .ranking-number {
