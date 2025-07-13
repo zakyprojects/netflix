@@ -360,6 +360,10 @@ nav button {
     .faq h2 {
         font-size: 22px;
     }
+    
+    .faq-answer {
+        max-height: 400px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -409,7 +413,14 @@ nav button {
     .faqbox,
     .faq-answer {
         max-width: 90vw;
+        width: 100%;
+        box-sizing: border-box;
         font-size: 24px;
+    }
+    
+    .faq-answer {
+        margin: 0 0 10px 0;
+        max-width: none;
     }
     
     .faq h2 {
@@ -475,7 +486,9 @@ nav button {
     .faqbox {
         padding: 20px;
         font-size: 18px;
-        max-width: 95vw;
+        max-width: 80vw;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .faqbox span {
@@ -484,9 +497,12 @@ nav button {
     }
     
     .faq-answer {
-        max-width: 95vw;
+        width: 100%;
+        max-width: 80vw;
         font-size: 16px;
         padding: 0 20px;
+        margin: 0 0 10px 0;
+        box-sizing: border-box;
     }
     
     .faq-answer.open {
@@ -710,15 +726,19 @@ html {
     color: #fff;
     font-size: 20px;
     line-height: 1.5;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease-in-out;
     padding: 0 24px;
     margin: 0 auto 10px auto;
     max-width: 60vw;
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-10px);
 }
 .faq-answer.open {
     padding: 16px 24px;
-    max-height: 1000px; /* Large enough for any answer */
+    max-height: 500px;
     overflow: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
