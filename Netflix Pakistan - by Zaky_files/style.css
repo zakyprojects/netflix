@@ -295,6 +295,7 @@ nav button {
     cursor: pointer;
     justify-content: space-between;
     transition: all 0.4s ease-in-out;
+    align-items: center;
 }
 
 .faqbox:hover{
@@ -307,6 +308,7 @@ nav button {
     height: 50px;
     width: 50px;
     color: white;
+    flex-shrink: 0;
 }
 
 
@@ -348,6 +350,18 @@ nav button {
             } */
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+    .faqbox,
+    .faq-answer {
+        max-width: 80vw;
+        font-size: 28px;
+    }
+    
+    .faq h2 {
+        font-size: 22px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero> :nth-child(1) {
         font-size: 40px;
@@ -395,6 +409,17 @@ nav button {
     .faqbox,
     .faq-answer {
         max-width: 90vw;
+        font-size: 24px;
+    }
+    
+    .faq h2 {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    
+    .psvg {
+        height: 40px;
+        width: 40px;
     }
 }
 
@@ -448,11 +473,35 @@ nav button {
     }
 
     .faqbox {
-        padding: 15px;
+        padding: 20px;
+        font-size: 18px;
+        max-width: 95vw;
     }
 
     .faqbox span {
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    
+    .faq-answer {
+        max-width: 95vw;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .faq-answer.open {
+        padding: 16px 20px;
+    }
+    
+    .faq h2 {
+        font-size: 18px;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    
+    .psvg {
+        height: 30px;
+        width: 30px;
     }
 }
 
