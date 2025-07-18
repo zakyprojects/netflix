@@ -12,7 +12,7 @@ This is a **frontend-only clone** of Netflix, created for **web development prac
 📌 **Purpose:**
 > "I created this project purely for learning and practicing frontend skills like layout design, responsiveness, and component structuring."
 
-🌐 Deployed at: [netflix.zakyprojects.site](https://netflix.zakyprojects.site)
+🌐 Deployed at: [netflix.zakyprojects.site](https://zakyprojects.github.io/netflix/)
 
 ---
 
